@@ -11,7 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { ButtonLoading } from "@/components/LoadingButton";
+import { LoadingButton } from "@/components/LoadingButton";
 import { Button } from "@/components/ui/button";
 import { User } from "@/types";
 import { useEffect } from "react";
@@ -143,7 +143,7 @@ const UserProfileForm = ({ currentUser, onSave, isLoading = false }: Props) => {
         </div>
 
         {isLoading ? (
-          <ButtonLoading />
+          <LoadingButton />
         ) : (
           <Button type="submit" className="bg-orange-500">
             Submit
