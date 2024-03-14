@@ -4,6 +4,7 @@ import AuthCallbackPage from "@/pages/AuthCallbackPage";
 import DetailPage from "@/pages/DetailPage";
 import HomePage from "@/pages/HomePage";
 import ManageRestaurantPage from "@/pages/ManageRestaurantPage";
+import OrderStatusPage from "@/pages/OrderStatusPage";
 import SearchPage from "@/pages/SearchPage";
 import UserProfilePage from "@/pages/UserProfilePage";
 import { Navigate, Route, Routes } from "react-router-dom";
@@ -42,6 +43,15 @@ const AppRoutes = () => {
 
       <Route element={<ProtectedRoute />}>
         <Route
+          path="/order-status"
+          element={
+            <Layout>
+              <OrderStatusPage />
+            </Layout>
+          }
+        ></Route>
+
+        <Route
           path="/user-profile"
           element={
             <Layout>
@@ -49,9 +59,7 @@ const AppRoutes = () => {
             </Layout>
           }
         ></Route>
-      </Route>
 
-      <Route element={<ProtectedRoute />}>
         <Route
           path="/manage-restaurant"
           element={
