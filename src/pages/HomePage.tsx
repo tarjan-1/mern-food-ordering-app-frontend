@@ -20,7 +20,7 @@ const HomePage = () => {
         </h1>
         <span className="text-xl">Food is just a click away!</span>
         <span className="text-xl text-red-500">
-          Explore site by searching city: manchester(due to limited data set){" "}
+          Explore restaurants by searching city: Los Angeles, Manchester(due to limited data set){" "}
         </span>
         <SearchBar
           placeHolder="Search by City or Town"
